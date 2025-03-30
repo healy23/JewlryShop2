@@ -1,3 +1,6 @@
+using JewlryShop2.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace JewlryShop2
 {
     public class Program
@@ -8,6 +11,12 @@ namespace JewlryShop2
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            //שתי השורות שצריך להוסיף
+            builder.Services.AddDbContext<JewelryContext>(options => 
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            
+            //builder.Services.AddDatabaseDeveloperPageExecptionFilter()
+
 
             var app = builder.Build();
 

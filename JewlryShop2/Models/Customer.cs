@@ -2,10 +2,13 @@
 {
     public class Customer
     {
-        public int CustomerID { get; set; }
-        public string CustomerName { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
 
-        public string CustomerGmail { get; set; }
+        public string Gmail { get; set; }
+
+        public string ClubMembership { get; set; }
 
         public ICollection<Review> Reviews { get; set; }
     }

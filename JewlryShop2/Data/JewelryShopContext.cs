@@ -17,6 +17,7 @@ namespace JewlryShop2.Data
 
         public DbSet<Review> Reviews { get; set; }
 
+        public DbSet<JewelryInPurchase> JewelryInPurchases { get; set; }
 
 
     }
