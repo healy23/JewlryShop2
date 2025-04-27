@@ -5,7 +5,7 @@
         public int JewelryID { get; set; }
         public string JewelryName { get; set; }
 
-        public int Price { get; set; }
+        public double Price { get; set; }
         public string Material { get; set; }
 
         //public int CostumerID { get; set; }
